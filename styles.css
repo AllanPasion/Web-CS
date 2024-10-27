@@ -1,0 +1,582 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.5;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    background: url('images/header.webp') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-family: 'times new roman';
+}
+
+.nav-links a:hover {
+    color: #f9d71c;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 150px;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    color: #f9d71c;
+    letter-spacing: 8px;
+}
+
+/* About Section */
+.about-section {
+    padding: 100px 50px;
+    background-color: #f8f9fa;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-direction: row-reverse;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-family: 'times new roman';
+}
+
+.read-more {
+    color: #f9d71c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.spotify-widget {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.video-section video {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #1A1A2E;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer .social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer .social a {
+    color: #FFD700;
+    font-size: 24px;
+    text-decoration: none;
+}
+.footer .newsletter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer .newsletter input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+}
+.footer .newsletter button {
+    background-color: #FFD700;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 72px;
+        letter-spacing: 4px;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nav-links {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .about-section {
+        padding: 50px 20px;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-content h2 {
+        font-size: 28px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+
+    .footer {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .footer .newsletter {
+        flex-direction: column;
+    }
+    .footer .newsletter input,
+    .footer .newsletter button {
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 48px;
+        letter-spacing: 2px;
+    }
+
+    .about-content h2 {
+        font-size: 24px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .footer .social a {
+        font-size: 20px;
+    }
+
+    .footer .newsletter input, .footer .newsletter button {
+        font-size: 14px;
+    }
+}
+
+
+
+/*LISTEN PAGEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4A0000;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+
+
+/* Header Styling */
+.header {
+    position: relative;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    overflow: hidden;
+}
+.header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.header h1, .header nav a {
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 1;
+}
+.header h1 {
+    font-size: 36px;
+}
+.header nav {
+    display: flex;
+    gap: 15px;
+    z-index: 1;
+}
+
+/* Content Styling */
+.content {
+    background-color: #4A0000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.content .album {
+    width: 45%;
+    margin: 20px;
+    text-align: center;
+}
+
+.content .album img {
+    width: 100%;
+    height: auto;
+}
+
+.content .album h2 {
+    color: white;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.content .album button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #1A1A2E;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .social {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer .social a {
+    color: #FFD700;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .newsletter input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.footer .newsletter button {
+    background-color: #FFD700;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .header nav a {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+
+    .content .album {
+        width: 80%;
+    }
+
+    .footer {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .header nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .header nav a {
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+
+    .content .album h2 {
+        font-size: 16px;
+    }
+
+    .content .album button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+
+/*shoppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp*/
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fff;
+    color: #1A1A1A;
+}
+
+.header {
+    position: relative;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    overflow: hidden;
+}
+
+.header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.header h1, .header nav a {
+    font-size: 22px; 
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.header h1 {
+    font-size: 36px;
+}
+
+.header nav {
+    display: flex;
+    gap: 15px;
+    z-index: 1;
+}
+
+/* Product Grid */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.product {
+    text-align: center;
+    margin: 20px;
+    width: 300px;
+    font-size: 16px;
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.product p {
+    font-size: 18px;
+    color: #888;
+}
+
+/* Footer */
+.footer {
+    background-color: #1A1A2E;
+    color: white;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer .social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer .social a {
+    color: #FFD700;
+    font-size: 24px;
+    text-decoration: none;
+}
+.footer .newsletter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer .newsletter input {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+}
+.footer .newsletter button {
+    background-color: #FFD700;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+    }
+
+    .header h1 {
+        font-size: 28px; 
+    }
+
+    .header nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .products {
+        padding: 20px; 
+    }
+
+    .product {
+        width: 90%; 
+        margin: 10px 0;
+    }
+
+    .product img {
+        width: 100px; 
+        height: auto; 
+    }
+
+    .footer {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .footer .newsletter {
+        flex-direction: column;
+    }
+    .footer .newsletter input,
+    .footer .newsletter button {
+        width: 100%;
+    }
+}
